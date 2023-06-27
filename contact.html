@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-comatible" content="IE=edge">
+    <meta name="viewport" content="width=device,initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+    body {
+        background: #333633;    
+    }
+    .con img {
+        box-shadow: -100px -40px 30px #ff004f;
+        position: absolute;
+        transform: matrix(1, -0.1, 0, 1, 20, 40);
+        border-top-left-radius: 100px;
+        
+        
+    }
+    .con h1{
+        position: absolute;  
+        left: 600px;
+        bottom: 600px;      
+        color: greenyellow;
+    }
+    .con h1 span {
+            color: white;
+    }
+    .form {
+        position: absolute;
+        left: 600px;
+        top: 150px;
+        display: grid;
+        width: 600px;
+        height: 300px;
+        right: 200px;
+        
+        
+        
+        
+    }
+    .form input {
+        margin: 20px;
+        background-color: grey;
+        color: white;
+        font-size: 20px;
+        border-radius:10px;
+
+    }
+
+    ::placeholder{
+        font-size:20px;
+        color: black;
+        font-family: simsun;
+        
+
+
+        
+    }
+    label{
+        font-size:25px;
+        color: aqua;
+        
+    }
+    .social h2 span {
+        color: #ff004f;
+        word-spacing: 2px;
+    }
+    .social h2 {
+        position: relative;
+        color: aqua;
+        border-left: outset grey;
+        padding-left: 7px;
+        
+        
+    }
+    .social {
+        position: absolute;
+        top: 70%;
+        left: 46%;
+    }
+    
+    .social a {
+        color: yellow;   
+        
+              
+    }
+
+   .social ion-icon {
+        width: 30px; 
+        height: 30px; 
+        margin: 10px 50px 5px 0; 
+         border-radius: 50px; 
+        background: linear-gradient(145deg, #373a37, #2e312e);
+box-shadow:  9px 9px 18px #1d1f1d,
+             -9px -9px 18px #494d49; 
+             padding: 10px;
+     } 
+   
+   
+   .social ion-icon:hover {
+    border-radius:50px;
+background: #333633;
+box-shadow: inset 9px 9px 18px #1d1f1d,
+            inset -9px -9px 18px #494d49;
+            color:#73456c;
+
+   }  
+   
+   .btn {
+    position: absolute;
+    top: 61%;
+    left: 75%;
+    
+   }
+   .btn input {
+    color: yellow;
+    background-color: #1d1f1d;
+    font-size: 18px;
+    padding: 9px;
+    border-radius: 15px;
+   }
+  
+   footer {
+    position: absolute;
+    left: 600px;
+    top: 630px;
+    text-align: center;
+    
+    color: white;
+}
+@media screen and (max-width:1009px) {
+    footer{
+        top:114%;
+        margin-left: -80px;
+        font-size: 20px;
+    }
+    .social{
+        margin-left: -300px;
+        margin-top: 11%;
+    }
+    .btn{
+        margin-top:10%;
+        margin-left: -132px;
+    }
+    
+}
+@media screen and (max-width:1075px){
+    .btn{
+        margin-top: 10%;
+        margin-left: -180px;
+        
+        
+    }
+    .social {
+        margin-top: 8%;
+        margin-left: -350px;
+    }
+    footer {
+        top: 111%;
+        margin-left: -25px;
+    }
+    h1 {
+        top: 5px;
+    }
+}
+@media screen and (max-width:1024px){
+    .btn{
+        margin-left: -140px;
+    }
+    footer {
+        top: 113%;
+    }
+}
+@media screen and (max-width:768px){
+    .btn{
+        margin-top: 15%;
+        margin-left: 40px;
+    }
+    .social {
+    margin-top: 150px;
+    margin-left: -200px;
+    }
+    footer {
+        top: 150%;
+        margin-left: -100px;
+    }
+}
+@media screen and (max-width:425px){
+    .form {
+        margin-top: 400px;
+        margin-left: -600px;
+    }
+    h1{
+        margin-left: -320px;
+    }
+    .social {
+        margin-top: 500px;
+        margin-left: -35px;
+        width: 350px;
+
+    }
+    .btn{
+        margin-top: 118%;
+        margin-left:-70px;
+    }
+    img {
+        width:400px;
+        height: 390px;
+        margin-top: 100px;
+    }
+    footer {
+        top: 190%;
+        margin-left: -400px;
+    }
+    
+}
+@media screen and (max-width:375px){
+    .btn {
+        margin-top: 132%;
+       margin-left: -30px;   
+    }
+    h1 {
+        margin-left: -365px;
+    }
+    .social{
+        margin-left:10px;
+    }
+}
+@media screen and (max-width:320px){
+    .btn{
+        margin-top: 156%;
+        margin-left: 10px;
+    }
+    .social{
+        margin-left: 20px;
+    }
+    footer {
+        margin-top: -5%;
+    }
+}
+@media screen and (max-width:426px){
+    .form {
+        margin-top: 400px;
+        margin-left: -600px;
+    }
+    h1{
+        margin-left: -320px;
+    }
+    .social {
+        margin-top: 500px;
+        margin-left: -35px;
+        width: 350px;
+
+    }
+    .btn{
+        margin-top: 118%;
+        margin-left:-70px;
+    }
+    img {
+        width:400px;
+        height: 390px;
+        margin-top: 100px;
+    }
+    footer {
+        top: 185%;
+        margin-left: -400px;
+    }
+}
+@media screen and (max-width:931px){
+    .btn{
+        margin-top:13%;
+        margin-left: -80px;
+    }
+    footer {
+        margin-top: 6.5%;
+        margin-left: -100px;
+    }
+    .social {
+        margin-top: 125px;
+        margin-left: -280px;
+    }
+}
+@media screen and (max-width:875px){
+    img{
+        width:440px;
+        height:450px;
+        margin-top: 50px;
+    }
+    footer {
+        margin-top: 5%;
+    }
+    .form {
+        margin-left: -100px;
+        
+    }
+    .btn{
+        margin-left:-130px;
+    }
+}
+@media screen and (max-width:827px){
+    footer{
+        margin-top: 10%;
+        margin-left: -100px;
+    }
+    .btn {
+      margin-left:120px;
+    }
+}
+@media screen and (max-width:787px) {
+    footer {
+        margin-top: 15%;
+        margin-left: -100px;
+    }
+}
+@media screen and (max-width:725px){
+    h1{
+        margin-left: -100px;
+    }
+    footer {
+        top: 126%;
+        margin-left: -150px;
+    }
+    .social{
+        margin-left: -200px;
+    }
+    .btn{
+        margin-top: 23%;
+    }
+    .form {
+    margin-top: 50px
+   }
+}
+@media screen and (max-width:669px){
+    footer {
+        top: 140%;
+    }
+    .social{
+        margin-top: 140px;
+        font-size: 20px;
+    }
+    .btn input{
+       font-size:25px;
+    }
+    
+}
+@media screen and (max-width:611px){
+    h1{
+        margin-left:-150px;
+    }
+    footer {
+        top: 153%;
+    }
+    .social {
+        font-size: 20px;
+    }
+    .form input{
+        font-size:30px;
+    }
+    .btn input{
+       font-size:25px;
+       padding: 15px;
+    }
+    .btn {
+        margin-top:30%;
+    }
+    ::placeholder {
+        font-size: 30px;
+        font-family: Inkfree;
+        padding-top: 20px;
+        color: white;
+    }
+    .check label{
+        font-size: 35px;
+    }
+    
+}
+@media screen and (max-width:561px){
+    h1{
+        font-size:45px;
+        margin-left:-160px;
+        margin-right:-100px;
+    }
+    .social{
+        font-size: 30px;
+    }
+    .social ion-icon {
+        width: 40px;
+        height: 40px;   
+        padding: 10px;
+    }
+    footer{
+        font-size:30px;
+        top:165%;
+    }
+}
+@media screen and (max-width:515px){
+   
+    .btn{
+        margin-top: 50%;
+        margin-left:300px;
+    }
+    .check input {
+        width: 20px;
+    }
+    .social{
+        margin-top:160px;
+    }
+    footer{
+        top:180%;
+    }
+}
+@media screen and (max-width:475px){
+   h1{
+    margin-left:-350px ;
+   }
+   footer{
+    top:205%;
+   }
+   .form{
+    margin-top: 400px;
+    margin-left: -590px;
+   }
+   
+   .social{font-size: 23px;
+    margin-top: 600px;
+    margin-left: 1px;
+    width:500px;
+   }
+   .btn{
+    margin-top: 115%;
+    margin-left:-40px;
+   }
+   footer{
+    margin-left: -350px;
+   }
+   .check input {
+    width: 20px;
+    height: 20px;
+   }
+  
+}
+@media screen and (max-width:429px){
+    .btn{
+        margin-top: 120%;
+    }
+    
+      .social {
+        margin-top: 121%;
+      }
+      footer {
+        top: 185%;
+        margin-left: -380px;
+      }
+}
+@media screen and (max-width:411px){
+    .btn{
+        margin-top: 130%;
+    }
+    .social {
+        margin-top: 135%;
+    }
+    footer {
+        top: 192%;
+        margin-left: -380px;
+      }
+    
+    
+}
+
+
+
+
+
+
+
+   
+    
+
+</style>
+</head>
+<body>
+    <div class="con">
+        <img src="contact.png">
+        <h1>Contact <span>Us</span></h1>
+    </div>
+
+<div class="form">
+    <input type="text" maxlength="60" placeholder="Enter Your Name">
+    <input type="email" placeholder="Enter Your Email">
+    <input type="number" placeholder="Enter your Mobile number">
+<div class="check">
+    <input type="radio" name="male">
+    <label for="male"> Male</label>
+    <input type="radio" name="male">
+    <label for="Female" >Female</label><br>
+    
+</div>
+
+</div>
+<div class="social">
+    <h2>Social  <span>   Media </span>  Links</h2>
+    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="https://twitter.com/i/flow/login"><ion-icon name="logo-twitter"></ion-icon></a>
+    <a href="https://www.facebook.com/login/"><ion-icon name="logo-facebook"></ion-icon></a>
+        
+</div>
+    
+    <div class="btn">
+        <input type="submit" value="Submit">
+    </div>
+    <footer>
+        &#169 code_huntersd369
+    </footer>
+
+</body>
+</html>
